@@ -1,9 +1,14 @@
 html {
   box-sizing: border-box;
 }
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-  margin: auto;
+  margin: 0 auto;
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   width: 400px;
@@ -20,6 +25,7 @@ h1 {
   background-color: #283e50;
   margin-top: -10px;
   padding-top: 40px;
+  border-radius: 10px 10px 0 0;
 }
 
 .firstPageImg {
@@ -43,12 +49,13 @@ p {
 ol {
   background-color: #283e50;
   text-align: left;
+  font-size: 14px;
 }
 
 .bodyRules {
   margin-top: 100px;
   background-color: #283e50;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
 }
 
 a {
@@ -74,4 +81,36 @@ a {
 }
 .hrat:hover {
   background-color: #0090e9;
+}
+
+.svg {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+.figure_img {
+  width: 100%;
+}
+.figure_text {
+  font-size: 14px;
+  font-style: italic;
+}
+
+@media (min-width: 540px) {
+  body {
+    width: 500px;
+  }
+  .figure_all {
+    display: flex;
+    width: calc((100% - 20px) / 2);
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    width: 800px;
+  }
 }
