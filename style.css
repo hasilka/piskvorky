@@ -25,17 +25,16 @@ h1 {
   background-color: #283e50;
   margin-top: -10px;
   padding-top: 40px;
-  border-radius: 10px 10px 0 0;
 }
 
 .firstPageImg {
   width: 400px;
   text-align: center;
   margin-top: 100px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
 }
 
-p {
+.firstPageText {
   text-align: center;
   width: 400px;
   font-size: 18px;
@@ -57,7 +56,14 @@ ol {
   background-color: #283e50;
   border-radius: 10px 10px 0 0;
 }
+.nadpisPravidla {
+  border-radius: 10px 10px 0 0;
+}
 
+.vypisPravidel {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 a {
   text-decoration: none;
   color: white;
@@ -98,7 +104,7 @@ a {
 }
 
 @media (min-width: 540px) {
-  body {
+  .rulesBody {
     width: 500px;
   }
   .figure_all {
@@ -110,7 +116,7 @@ a {
 }
 
 @media only screen and (min-width: 1200px) {
-  body {
+  .rulesBody {
     width: 800px;
   }
 }
