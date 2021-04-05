@@ -44,7 +44,7 @@ h1 {
   margin-top: -35px;
   margin-bottom: 0px;
 }
-
+/* pravidla.html */
 ol {
   background-color: #283e50;
   text-align: left;
@@ -67,14 +67,15 @@ ol {
 a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  padding: 15px 0;
-  display: block;
-  margin: 0px;
 }
 
 .pravidla {
   background-color: #1fcca4;
+
+  font-size: 20px;
+  padding: 15px 0;
+  display: block;
+  margin: 0px;
 
   border-bottom: 1px solid #283e50;
 }
@@ -84,6 +85,11 @@ a {
 
 .hrat {
   background-color: #0197f6;
+
+  font-size: 20px;
+  padding: 15px 0;
+  display: block;
+  margin: 0px;
 }
 .hrat:hover {
   background-color: #0090e9;
@@ -126,4 +132,85 @@ a {
   .rulesBody {
     width: 800px;
   }
+}
+/* hra.html */
+.bodyHra {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.game {
+  max-width: 80vmin;
+  /* margin: 6.25rem auto; */
+  height: 100vh;
+}
+.bodyHra h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-weight: 100;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-right: 5px;
+  background: none;
+}
+
+.hlavickaHry {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+
+  filter: invert(100%);
+}
+.ikony {
+  display: flex;
+  align-items: center;
+}
+.hrajeme {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.domu {
+  background-color: #1fcca4;
+  padding: 10px;
+  border-radius: 5px;
+}
+.domu:hover {
+  background-color: #1cbb96;
+}
+.znovu {
+  background-color: #0197f6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.znovu:hover {
+  background-color: #0090e9;
+}
+
+.hraciPole {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vmin;
+}
+
+.cell {
+  border: 1px solid #283e50;
+  flex: 0 0 calc(100% / 10);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.cell:hover,
+.cell:active {
+  opacity: 0.9;
 }
