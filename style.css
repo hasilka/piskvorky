@@ -212,12 +212,11 @@ a {
 }
 
 .field__cell--circle {
-  background: rgba(255, 255, 255, 0.4) url(../images/circle.svg) no-repeat
-    center;
+  background: rgba(255, 255, 255, 0.4) url(images/circle.svg) no-repeat center;
   background-size: 75%;
 }
 
 .field__cell--cross {
-  background: rgba(255, 255, 255, 0.4) url(../images/cross.svg) no-repeat center;
+  background: rgba(255, 255, 255, 0.4) url(images/cross.svg) no-repeat center;
   background-size: 75%;
 }
