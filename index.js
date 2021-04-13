@@ -1,5 +1,5 @@
 'use strict';
-
+console.log('funguju');
 let player = 'circle';
 const playerElm = document.querySelector('#player');
 const btnElm = document.querySelectorAll('.field__cell');
