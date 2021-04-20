@@ -137,8 +137,7 @@ a {
 
 .game {
   max-width: 80vmin;
-  margin: 6.25rem auto;
-  height: 100vh;
+  margin: 2.5rem auto;
 }
 .bodyHra h1 {
   font-family: 'Lobster', cursive;
@@ -194,8 +193,12 @@ a {
 }
 
 .hraciPole {
-  display: flex;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [10];
+  grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr) [10];
+  grid-template-rows: repeat(10, 1fr);
   height: 50vmin;
 }
 
@@ -219,4 +222,28 @@ a {
 .field__cell--cross {
   background: rgba(255, 255, 255, 0.4) url(images/cross.svg) no-repeat center;
   background-size: 75%;
+}
+
+.field__cell--circle,
+.field__cell--cross {
+  -webkit-animation: grow 0.15s linear;
+  animation: grow 0.15s linear;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 80%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 80%;
+  }
 }
