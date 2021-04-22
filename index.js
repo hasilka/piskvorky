@@ -43,7 +43,7 @@ btnElm.forEach((field) => {
   });
 });
 
-//vyhrál//
+//refresh z hlášky//
 
 const vitez = (message) => {
   let ok = confirm(message);
@@ -142,9 +142,7 @@ const isWinningMove = (field) => {
     return true;
   }
 
-  return false;
-
-  //diagonaly//
+  //diagonály//
 
   let j;
 
@@ -163,8 +161,8 @@ const isWinningMove = (field) => {
     i--;
   }
 
-  // j = origin.row;
-  // i = origin.column;
+  j = origin.row;
+  i = origin.column;
   while (
     j > 0 &&
     i < fieldSize - 1 &&
@@ -178,17 +176,16 @@ const isWinningMove = (field) => {
   if (diagonalaX >= symbolsToWin) {
     return true;
   }
-
-  // j = origin.row;
-  // i = origin.column;
+  j = origin.row;
+  i = origin.column;
   while (j > 0 && i > 0 && symbol === getSymbol(getField(j - 1, i - 1))) {
     diagonalaY++;
     i--;
     j--;
   }
 
-  // j = origin.row;
-  // i = origin.column;
+  j = origin.row;
+  i = origin.column;
   while (
     j < fieldSize - 1 &&
     i < fieldSize - 1 &&
