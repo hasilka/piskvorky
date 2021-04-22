@@ -137,7 +137,8 @@ a {
 
 .game {
   max-width: 80vmin;
-  margin: 2.5rem auto;
+  text-align: center;
+  margin: 0 auto;
 }
 .bodyHra h1 {
   font-family: 'Lobster', cursive;
@@ -159,7 +160,6 @@ a {
   width: 20px;
   height: 20px;
   margin-left: 5px;
-
   filter: invert(100%);
 }
 .ikony {
@@ -193,13 +193,11 @@ a {
 }
 
 .hraciPole {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr) [10];
-  grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr) [10];
-  grid-template-rows: repeat(10, 1fr);
-  height: 50vmin;
+  text-align: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vmin;
+  height: 70vmin;
 }
 
 .field__cell {
